@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil | Climb</title>
+</head>
+
+<body>
+    <main class="main-dash">
+        <div class="header">
+            <div class="logo">
+                <img src="climb.png" alt="" width="160px" height="60px">
+            </div>
+            <div class="user-online">
+                <div>
+                    <span>Alex Wilder</span>
+                    <span>066065050</span>
+                </div>
+                <img src="img/img-1.jpg" alt="">
+            </div>
+        </div>
+
+        <section class="dashboard">
+            <div class="i-name">
+                <h5>Tableau de bord</h5>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="carte">
+                        <span>Mes revenues</span>
+                        <h4><span>XAF</span> <span>40.000</span></h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="carte">
+                        <span>Fonds investis</span>
+                        <h4><span>XAF</span> <span>120.000</span></h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="carte">
+                        <span>Bonus</span>
+                        <h4><span>XAF</span> <span>0</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-action"></div>
+
+            <div class="inventory">
+                <h4>Investissement en cours</h4>
+                <table id="investissement" width="100px">
+                    <thead>
+                        <tr>
+                            <td>Investissement</td>
+                            <td>Gain</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="list-inv">
+                            <td>
+                                <span>XAF</span> <span>60.000</span>
+                            </td>
+                            <td>
+                                <span>XAF</span> <span>60.000</span>
+                            </td>
+                            <td>
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="fas fa-chevron-down"></span>
+                                  </a>
+                            </td>
+                        </tr>
+                        <tr class="collapses delay-wait" id="collapseExample">
+                            <td colspan="3"><span id="days">99</span>J - <span id="hours">99</span>H - <span id="minutes">99</span>M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="menu">
+            <div class="menu-items">
+                <li class="active"><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+            </div>
+        </div>
+    </main>
+
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/font-awesome/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
