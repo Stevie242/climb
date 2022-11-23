@@ -52,7 +52,29 @@
                 </div>
             </div>
 
-            <div class="view-action"></div>
+            <div class="view-action">
+                <div class="action-card">
+                    <div class="item-action">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#investirModal"><span
+                                class="fas fa-wallet"></span></a>
+                    </div>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#investirModal">Investir</a>
+                </div>
+                <div class="action-card">
+                    <div class="item-action">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal"><span
+                                class="fas fa-file-circle-question"></span></a>
+                    </div>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                </div>
+                <div class="action-card">
+                    <div class="item-action">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal"><span
+                                class="fas fa-retweet"></span></a>
+                    </div>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal">Bonus</a>
+                </div>
+            </div>
 
             <div class="inventory">
                 <h4>Investissement en cours</h4>
@@ -73,13 +95,15 @@
                                 <span>XAF</span> <span>60.000</span>
                             </td>
                             <td>
-                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
                                     <span class="fas fa-chevron-down"></span>
-                                  </a>
+                                </a>
                             </td>
                         </tr>
                         <tr class="collapses delay-wait" id="collapseExample">
-                            <td colspan="3"><span id="days">99</span>J - <span id="hours">99</span>H - <span id="minutes">99</span>M</td>
+                            <td colspan="3"><span id="days">99</span>J - <span id="hours">99</span>H - <span
+                                    id="minutes">99</span>M</td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,12 +113,90 @@
         <div class="menu">
             <div class="menu-items">
                 <li class="active"><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href=""><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href=""><i class="fa-solid fa-repeat"></i><span>Transactions</span></a></li>
+                <li><a href=""><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
+                <li><a href=""><i class="fas fa-user-gear"></i><span>Profil</span></a></li>
             </div>
         </div>
+
+        <!-- Modal investissement -->
+        <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close"><span
+                                class="fas fa-chevron-left"></span> Retour</button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h2 class="text-center">Investissement en cours <span style="color: red;">(2)</span> </h2>
+                            <div class="card-body bg-primary mb-2" style="border-radius: 15px;">
+                                <div class="stat-widget-one">
+                                    <div class="stat-content dib">
+                                        <i class="bi bi-file-earmark-post-fill"></i>
+                                        <div class="stat-text" style="color: white;">XAF 20.000</div>
+                                        <div class="stat-digit" style="color: yellow;">XAF 30.000</div>
+                                        <div class="stat-digit" style="color: red;">En attente d'une fusion</div>
+                                        <div class="stat-digit" style="color: white;">Sat 12 Novembre, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body bg-primary mb-2" style="border-radius: 15px;">
+                                <div class="stat-widget-one">
+                                    <div class="stat-content dib">
+                                        <i class="bi bi-file-earmark-post-fill"></i>
+                                        <div class="stat-text" style="color: white;">XAF 20.000</div>
+                                        <div class="stat-digit" style="color: yellow;">XAF 30.000</div>
+                                        <div class="stat-digit" style="color: red;">En attente d'une fusion</div>
+                                        <div class="stat-digit" style="color: white;">Sat 12 Novembre, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal investissement -->
+        <!-- Modal details -->
+        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailsModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal details -->
+        <!-- Modal bonus -->
+        <div class="modal fade" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bonusModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal bonus -->
     </main>
 
     <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
