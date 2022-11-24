@@ -48,19 +48,19 @@
                                     <div class="col-4 col-sm-4 col-md-3">
                                         <div class="nbr-info">
                                             <b>08</b>
-                                            <span>Rserver</span>
+                                            <span>Investissement</span>
                                         </div>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-3">
                                         <div class="nbr-info">
                                             <b>02</b>
-                                            <span>Annuler</span>
+                                            <span>En cours</span>
                                         </div>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-3">
                                         <div class="nbr-info last">
                                             <b>05</b>
-                                            <span>Reporter</span>
+                                            <span>Terminer</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
@@ -109,124 +109,91 @@
             </div>
         </div>
 
-        <!-- Modal investissement -->
-        <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investir</h5>
-                            <!-- /Title -->
-                            <div class="form-inv">
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="plan_invest">Sélectionner le montant à invesitr</label>
-                                        <select name="plan_invest" id="plan_invest">
-                                            <option value="0" disabled>Sélectionner le montant à invesitr</option>
-                                            <option value="2">10000</option>
-                                            <option value="3">20000</option>
-                                            <option value="4">30000</option>
-                                            <option value="5">40000</option>
-                                            <option value="6">50000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="gain">Votre gain</label>
-                                        <input type="text" placeholder="0" id="gain" disabled>
-                                    </div>
-                                    <div class="form-submit">
-                                        <button>Investir</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Modal investissement -->
-        <!-- Modal details -->
-        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investissement en cours <span>(2)</span></h5>
-                            <!-- /Title -->
-                            <div class="cards-inv">
-                                <!-- Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <!-- /Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Modal details -->
-        <!-- Modal bonus -->
-        <div class="modal fade" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+        <!-- Modal edit profile -->
+        <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editProfileLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="bonusModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="editProfileLabel">Edition du profil</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="form-edit">
+                            <form action="">
+                                <div class="user_pic">
+                                    <img src="img/profil-default.png" alt="" id="image_profile">
+                                    <label for="add_pic" id="btn-add-pic"><i class="fas fa-camera-alt"></i></label>
+                                    <input type="file" name="picture" id="add_pic">
+                                </div>
+                                <div class="form-group">
+                                    <label for="full_name">Nom et prénom</label>
+                                    <input type="text" name="full_name" id="full_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthday">Date de naissance</label>
+                                    <input type="date" name="birthday" id="birthday">
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Ville</label>
+                                    <input type="text" name="city" id="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                                <div class="form-submit">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editPassword"
+                                        data-bs-dismiss="modal">Changer mot
+                                        de passe</a href="#">
+                                    <button type="submit">Mettre à jour</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Modal bonus -->
+        <!-- /Modal edit profile -->
+
+        <!-- Change password -->
+        <div class="modal fade" id="editPassword" tabindex="-1" aria-labelledby="editPasswordLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editPasswordLabel">Changer mot de passe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-edit">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="old_pwd">Ancien mot de passe</label>
+                                    <input type="password" name="old_pwd" id="old_pwd"
+                                        placeholder="Tapez votre ancien mot de passe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Nouveau mot de passe</label>
+                                    <input type="password" name="pwd" id="pwd"
+                                        placeholder="Tapez votre nouveau mot de passe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="conf_pwd">Confirmer votre mot de passe</label>
+                                    <input type="password" name="conf_pwd" id="conf_pwd"
+                                        placeholder="Retapez votre nouveau mot de passe">
+                                </div>
+                                <div class="form-submit">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#editProfile"
+                                        data-bs-dismiss="modal">Editer
+                                        profil</a>
+                                    <button type="submit">Mettre à jour</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Change password -->
     </main>
 
     <script src="vendors/jquery/jquery-3.6.1.min.js"></script>

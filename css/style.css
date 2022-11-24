@@ -970,3 +970,119 @@ body {
 .user-profil .info .bottom-info .btn-change-pwd button:hover {
     background-color: var(--text-link);
 }
+
+/* Modal edit profile */
+.form-edit {
+    display: block;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.form-edit h5 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-edit .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-edit .form-group label {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.form-edit .form-group input {
+    border: 2px solid var(--border-color-img);
+    border-radius: 10px;
+    height: 45px;
+    font-size: 17px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.form-edit .forgot-pwd {
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.form-edit .forgot-pwd a {
+    text-decoration: none;
+    color: #363232;
+    font-size: 16px;
+}
+
+.form-edit .forgot-pwd a:hover {
+    text-decoration: underline;
+}
+
+.form-edit .form-submit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-edit .form-submit a {
+    /* width: 50%; */
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--black-lice);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-edit .form-submit button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--text-link);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+.form-edit .signup-link {
+    text-align: center;
+}
+
+.form-edit .signup-link a {
+    color: var(--text-link);
+    font-weight: 600;
+}
+
+.form-edit .user_pic {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-edit .user_pic img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--border-color-img);
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.form-edit .user_pic label {
+    position: absolute;
+    font-size: 30px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(255, 254, 254);
+    opacity: .6;
+}
+
+
+.form-edit .user_pic input {
+    display: none;
+}
