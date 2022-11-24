@@ -8,6 +8,25 @@
     src: url('../fonts/Poppins-Regular.ttf');
 }
 
+:root{
+    --green-revers:rgba(111, 253, 106, 0.616);
+    --green: rgb(111, 253, 106);
+    --green-text-btn:rgb(4, 73, 2);
+    --green-lice:rgba(111, 253, 106, 0.822);
+    --text-grey: rgb(94, 94, 94);
+    --black-lice: #363232;
+    --text-link: rgb(16, 108, 245);
+    --border-color-img: rgba(16, 108, 245, 0.521);
+    --li-hover-menu: rgb(46, 46, 46);
+    --card-text-color: rgb(117, 117, 117);
+    --text-f-span-dash: rgb(0, 0, 0);
+    --text-l-span-dash: rgb(255, 0, 0);
+    --green-table-td: rgb(146, 214, 144);
+    --bg-item-card: #2E2E2E;
+    --card-inv: #c6e6d469;
+    --info-span: #4b4d67;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -81,7 +100,7 @@ body {
     text-align: center;
     margin: 10px 0;
     padding: 15px 10px;
-    background-color: rgba(111, 253, 106, 0.616);
+    background-color: var(--green-revers);
     border-radius: 20px;
 }
 
@@ -94,7 +113,7 @@ body {
 }
 
 .com-e .my-card p {
-    color: rgb(94, 94, 94);
+    color: var(--text-grey);
 }
 
 /* FAQs */
@@ -167,7 +186,7 @@ body {
 #contact .form .form-group input,
 #contact .form .form-group textarea {
     width: 100%;
-    border: 2px solid rgb(111, 253, 106);
+    border: 2px solid var(--green);
     border-radius: 10px;
     outline: none;
     padding: 10px;
@@ -188,10 +207,11 @@ body {
 #contact .form .form-submit button {
     padding: 10px 20px;
     border: none;
-    background-color: rgba(111, 253, 106, 0.616);
+    outline: none;
+    background-color: var(--green-revers);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
-    color: rgb(4, 73, 2);
+    color: var(--green-text-btn);
 }
 
 #contact .form .form-submit button svg {
@@ -199,7 +219,7 @@ body {
 }
 
 #contact .form .form-submit button:hover {
-    background-color: rgba(111, 253, 106, 0.822);
+    background-color: var(--green-lice);
 }
 
 #contact .form .form-submit button:hover svg {
@@ -223,7 +243,7 @@ body {
 
 .footer-form .form-group input {
     padding: 10px;
-    border: 2px solid rgba(111, 253, 106, 0.616);
+    border: 2px solid var(--green-revers);
     outline: none;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -237,12 +257,12 @@ body {
     width: 30%;
     height: 40px;
     border: none;
-    background-color: rgba(111, 253, 106, 0.616);
-    color: rgb(4, 73, 2);
+    background-color: var(--green-revers);
+    color: var(--green-text-btn);
 }
 
 .footer-form .footer-submit button:hover {
-    background-color: rgba(111, 253, 106, 0.822);
+    background-color: var(--green-lice);
 }
 
 
@@ -290,7 +310,7 @@ body {
 }
 
 .auth-a .content .form-auth .form-group input {
-    border: 2px solid rgb(111, 253, 106);
+    border: 2px solid var(--green);
     border-radius: 10px;
     height: 45px;
     font-size: 17px;
@@ -305,7 +325,7 @@ body {
 
 .auth-a .content .form-auth .forgot-pwd a {
     text-decoration: none;
-    color: #363232;
+    color: var(--black-lice);
     font-size: 16px;
 }
 
@@ -323,10 +343,10 @@ body {
     width: 50%;
     padding: 10px 20px;
     border: none;
-    background-color: rgba(111, 253, 106, 0.616);
+    background-color: var(--green-revers);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
-    color: rgb(4, 73, 2);
+    color: var(--green-text-btn);
 }
 
 .auth-a .content .form-auth .signup-link {
@@ -334,7 +354,7 @@ body {
 }
 
 .auth-a .content .form-auth .signup-link a {
-    color: rgb(16, 108, 245);
+    color: var(--text-link);
     font-weight: 600;
 }
 
@@ -349,7 +369,7 @@ body {
 .auth-a .content .form-auth .user_pic img {
     width: 150px;
     height: 150px;
-    border: 2px solid rgba(16, 108, 245, 0.521);
+    border: 2px solid var(--border-color-img);
     padding: 5px;
     border-radius: 50%;
     object-fit: cover;
@@ -422,7 +442,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid rgba(16, 108, 245, 0.521);
+    border: 2px solid var(--border-color-img);
     padding: 2px;
 }
 
@@ -455,7 +475,7 @@ body {
 }
 
 .menu .menu-items li:hover {
-    background: rgb(46, 46, 46);
+    background: var(--li-hover-menu);
     border-bottom: 3px solid #fff;
 }
 
@@ -476,7 +496,7 @@ body {
 
 .menu .menu-items li a span {
     font-size: 12px;
-    color: rgb(16, 108, 245);
+    color: var(--text-link);
     margin-top: 7px;
 }
 
@@ -486,7 +506,7 @@ body {
     padding: 15px 30px;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 461px;
+    height: 466px;
     width: 100%;
     scrollbar-width: none;
 }
@@ -509,7 +529,7 @@ body {
 
 .main-dash .dashboard .carte>span:first-child {
     font-size: 16px;
-    color: rgb(117, 117, 117);
+    color: var(--card-text-color);
     margin-bottom: 5px;
     margin-top: 5px;
 }
@@ -519,12 +539,12 @@ body {
 }
 
 .main-dash .dashboard .carte h4 span:first-child {
-    color: rgb(0, 0, 0);
+    color: var(--text-f-span-dash);
     font-weight: 600;
 }
 
 .main-dash .dashboard .carte h4 span:last-child {
-    color: rgb(255, 0, 0);
+    color: var(--text-l-span-dash);
     font-weight: 600;
 }
 
@@ -546,16 +566,12 @@ body {
     border-spacing: 0 10px;
 }
 
-/* tr{
-    background: rgb(146, 214, 144);
-} */
-
 #investissement td {
     border-collapse: collapse;
 }
 
 #investissement tbody tr td {
-    background: rgb(146, 214, 144);
+    background: var(--green-table-td);
 }
 
 #investissement tbody tr.list-inv td:first-child {
@@ -570,7 +586,7 @@ body {
 }
 
 #investissement tbody tr.list-inv td span:last-child {
-    color: rgb(255, 0, 0);
+    color: var(--text-l-span-dash);
     font-weight: 600;
 }
 
@@ -590,7 +606,7 @@ body {
 
 
 #investissement tbody tr.delay-wait td span {
-    color: rgb(255, 0, 0);
+    color: var(--text-l-span-dash);
     font-weight: 600;
     margin-right: 5px;
 }
@@ -643,7 +659,7 @@ body {
 
 .view-action .action-card .item-action {
     padding: 10px 20px;
-    background: #2E2E2E;
+    background: var(--bg-item-card);
     border-radius: 10px;
     color: #fff;
     height: 70px;
@@ -670,4 +686,287 @@ body {
 .view-action .action-card>a {
     color: #000;
     text-decoration: none;
+}
+
+.investir-m{
+    padding: 5px 15px;
+}
+
+.investir-m .btn-close-modal{
+    border: none;
+    background: transparent;
+    margin-bottom: 30px;
+    color: var(--text-l-span-dash);
+}
+
+.investir-m .btn-close-modal span:last-child{
+    margin-left: 10px;
+}
+
+.investir-m h5{
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.investir-m .cards-inv{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.investir-m .card-inv{
+    padding: 10px 28px;
+    background: var(--card-inv);
+    border-radius: 15px;
+    text-align: start;
+    margin: 10px 0;
+}
+
+.investir-m .card-inv:last-child{
+    margin-bottom: 0;
+}
+
+.investir-m .card-inv h6,
+.investir-m .card-inv p{
+    margin-bottom: 15px;
+}
+
+.investir-m .card-inv h6 span{
+    color: var(--text-l-span-dash);
+    font-weight: 600;
+}
+
+.investir-m .card-inv p span{
+    color: var(--text-l-span-dash);
+    font-weight: 600;
+}
+
+.investir-m .card-inv .trash{
+    text-align: center;
+}
+
+.investir-m .card-inv .trash span,
+.investir-m .card-inv .trash svg,
+.investir-m .card-inv .trash i{
+    font-size: 22px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #ff5555;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.investir-m .form-inv .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.investir-m .form-inv .form-group label {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.investir-m .form-inv .form-group select,
+.investir-m .form-inv .form-group input {
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    height: 45px;
+    font-size: 17px;
+    padding: 10px 15px;
+    outline: none;
+    background: #fff;
+}
+
+.investir-m .form-inv .form-group select option:first-child{
+    color: rgb(110, 110, 110);
+}
+
+.investir-m .form-inv .form-submit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.investir-m .form-inv .form-submit button {
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--green-revers);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--green-text-btn);
+}
+
+
+/* Transaction */
+
+.trans {
+    width: 100%;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 40px;
+}
+
+.transact{
+    background: var(--green-revers);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.transact:last-child{
+    margin-bottom: 0px;
+}
+
+.transact .state,
+.transact .people{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.transact .state:last-child,
+.transact .people:last-child{
+    margin-bottom: 0px;
+}
+
+.transact .state .info,
+.transact .people .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.transact .state .infp b,
+.transact .people .info b{
+    font-size: 16px;
+}
+
+.transact .state .info div h5,
+.transact .people .info div h5{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.transact .state .info div p,
+.transact .people .info div p{
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* .transact .state .info div h5 span.date{
+    font-weight: 600;
+    color: var(--text-l-span-dash);
+} */
+
+.transact .state .info div h5 span{
+    color: var(--text-l-span-dash);
+}
+
+.transact .date-transact h5{
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-l-span-dash);
+}
+
+
+/* Mon profil */
+
+.profil{
+    width: 100%;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 40px;
+}
+
+.user-profil {
+    border-bottom: 2px solid rgba(235, 232, 232, 0.89);
+    margin-bottom: 15px;
+}
+
+.user-profil .img-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profil .img-profil img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color-img);
+    padding: 2px;
+}
+
+.user-profil .info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.user-profil .info .top-info {
+    border-bottom: 2px solid rgba(235, 232, 232, 0.89);
+    margin-bottom: 15px;
+}
+
+.user-profil .info .top-info h5 {
+    font-weight: 600;
+}
+
+.user-profil .info .bottom-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profil .info .bottom-info .nbr-info {
+    text-align: center;
+    width: 100%;
+    border-right: 2px solid rgba(235, 232, 232, 0.89);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profil .info .bottom-info .nbr-info b {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: var(--text-link);
+}
+
+.user-profil .info .bottom-info .nbr-info span {
+    display: block;
+    width: 100%;
+    color: var(--info-span);
+    font-size: 11px;
+    opacity: .8;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.user-profil .info .bottom-info .btn-change-pwd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-profil .info .bottom-info .btn-change-pwd button {
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    background-color: var(--border-color-img);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+.user-profil .info .bottom-info .btn-change-pwd button:hover {
+    background-color: var(--text-link);
 }

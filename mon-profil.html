@@ -28,94 +28,84 @@
 
         <section class="dashboard">
             <div class="i-name">
-                <h5>Tableau de bord</h5>
+                <h5>Mon profil</h5>
             </div>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="carte">
-                        <span>Mes revenues</span>
-                        <h4><span>XAF</span> <span>40.000</span></h4>
+            <div class="profil">
+                <div class="user-profil row">
+                    <div class="col-sm-12 col-md-3 col-lg-2 mb-3 mb-md-0">
+                        <div class="img-profil">
+                            <img src="img/img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-10">
+                        <div class="info">
+                            <div class="top-info text-center text-md-start">
+                                <h5>Alex Wilder </h5>
+                            </div>
+                            <div class="bottom-info pt-2">
+                                <div class="row w-100">
+                                    <div class="col-4 col-sm-4 col-md-3">
+                                        <div class="nbr-info">
+                                            <b>08</b>
+                                            <span>Rserver</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-3">
+                                        <div class="nbr-info">
+                                            <b>02</b>
+                                            <span>Annuler</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-3">
+                                        <div class="nbr-info last">
+                                            <b>05</b>
+                                            <span>Reporter</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
+                                        <div class="btn-change-pwd">
+                                            <button data-bs-toggle="modal" data-bs-target="#editProfile">Modifier
+                                                profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <span>Fonds investis</span>
-                        <h4><span>XAF</span> <span>120.000</span></h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="carte">
+                            <span>Mes revenues</span>
+                            <h4><span>XAF</span> <span>40.000</span></h4>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <span>Bonus</span>
-                        <h4><span>XAF</span> <span>0</span></h4>
+                    <div class="col-md-4">
+                        <div class="carte">
+                            <span>Fonds investis</span>
+                            <h4><span>XAF</span> <span>120.000</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="carte">
+                            <span>Bonus</span>
+                            <h4><span>XAF</span> <span>0</span></h4>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="view-action">
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#investirModal"><span
-                                class="fas fa-wallet"></span></a>
-                    </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#investirModal">Investir</a>
-                </div>
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal"><span
-                                class="fas fa-file-circle-question"></span></a>
-                    </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
-                </div>
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal"><span
-                                class="fas fa-retweet"></span></a>
-                    </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal">Bonus</a>
-                </div>
-            </div>
 
-            <div class="inventory">
-                <h4>Investissement en cours</h4>
-                <table id="investissement">
-                    <thead>
-                        <tr>
-                            <td>Investissement</td>
-                            <td>Gain</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="list-inv">
-                            <td>
-                                <span>XAF</span> <span>60.000</span>
-                            </td>
-                            <td>
-                                <span>XAF</span> <span>60.000</span>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    <span class="fas fa-chevron-down"></span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="collapse delay-wait" id="collapseExample">
-                            <td colspan="3"><span id="days"></span>J - <span id="hours"></span>H - <span
-                                    id="minutes"></span>M - <span id="seconde"></span>S</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </section>
 
         <div class="menu">
             <div class="menu-items">
-                <li class="active"><a href="mon-compte.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
+                <li><a href="mon-compte.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
                 <li><a href="mes-transactions.html"><i class="fa-solid fa-repeat"></i><span>Transactions</span></a></li>
                 <li><a href="mes-investissement.html"><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
-                <li><a href="mon-profil.html"><i class="fas fa-user-gear"></i><span>Profil</span></a></li>
+                <li class="active"><a href="mon-profil.html"><i class="fas fa-user-gear"></i><span>Profil</span></a>
+                </li>
             </div>
         </div>
 
