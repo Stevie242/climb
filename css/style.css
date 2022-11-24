@@ -506,7 +506,7 @@ body {
     padding: 15px 30px;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 466px;
+    height: 470px;
     width: 100%;
     scrollbar-width: none;
 }
@@ -931,6 +931,18 @@ body {
     border-right: 2px solid rgba(235, 232, 232, 0.89);
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width:768px) {
+    .user-profil .info .bottom-info .nbr-info.last {
+        border-right: 2px solid rgba(235, 232, 232, 0.89);
+    }
+}
+
+@media (max-width:768px) {
+    .user-profil .info .bottom-info .nbr-info.last {
+        border-right: none;
+    }
 }
 
 .user-profil .info .bottom-info .nbr-info b {
