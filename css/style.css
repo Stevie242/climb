@@ -502,13 +502,17 @@ body {
 
 .main-dash .dashboard {
     margin-top: 80px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 20px;
     padding: 15px 30px;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 470px;
+    height: 82vh;
     width: 100%;
     scrollbar-width: none;
+}
+
+.main-dash .dashboard > div:last-child{
+    margin-bottom: 30px;
 }
 
 .main-dash .dashboard .i-name h5 {
@@ -810,8 +814,15 @@ body {
     border-radius: 40px;
 }
 
-.transact{
+.trans-green{
     background: var(--green-revers);
+}
+
+.trans-blue{
+    background: var(--border-color-img);
+}
+
+.transact{
     padding: 10px 15px;
     border-radius: 20px;
     margin-bottom: 15px;
