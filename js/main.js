@@ -5,6 +5,9 @@ $(document).ready(function(){
         $(this).css('background-image', 'url(' + bg + ')');
     });
     
+    $('#drop-menu').on('click',function(){
+        $('#menu-drop').toggleClass('show');
+    });
 })
 
 /*Show picture upload */

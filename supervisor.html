@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/supervisor.css">
     <title>Accueil | Climb</title>
 </head>
 
@@ -26,7 +27,7 @@
                 <i class="fa-solid fa-list" id="drop-menu"></i>
             </div>
             <div class="menu-drop" id="menu-drop">
-                <li><a href=""><i class="fa-solid fa-globe"></i> Supervisor</a></li>
+                <li><a href=""><i class="fa-solid fa-dashboard"></i> Mon compte</a></li>
                 <li><a href=""><i class="fas fa-user-gear"></i> Mon profil</a></li>
                 <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a></li>
             </div>
@@ -34,96 +35,115 @@
 
         <section class="dashboard">
             <div class="i-name">
-                <h5>Tableau de bord</h5>
+                <h5>Superviseur</h5>
             </div>
 
             <div class="row">
                 <div class="col-md-4">
                     <div class="carte">
-                        <span>Mes revenues</span>
-                        <h4><span>XAF</span> <span>40.000</span></h4>
+                        <span>Membres</span>
+                        <h4><span>100</span></h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="carte">
-                        <span>Fonds investis</span>
-                        <h4><span>XAF</span> <span>120.000</span></h4>
+                        <span>Fusion en cours</span>
+                        <h4><span>10</span></h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="carte">
-                        <span>Bonus</span>
-                        <h4><span>XAF</span> <span>0</span></h4>
+                        <span>Signalement</span>
+                        <h4><span>0</span></h4>
                     </div>
                 </div>
             </div>
 
-            <div class="view-action">
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#investirModal"><span
-                                class="fas fa-wallet"></span></a>
+            <div class="actuality">
+                <div class="investissement">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Investissement récent</h2>
+                        </div>
+                        <div class="box-body">
+                            <table width='100%'>
+                                <thead>
+                                    <tr>
+                                        <td>Investisseur</td>
+                                        <td>Montant</td>
+                                        <td>Gain</td>
+                                        <td>Date</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alex Wilder</td>
+                                        <td>40000 Xaf</td>
+                                        <td>60000 Xaf</td>
+                                        <td>01/01/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alex Wilder</td>
+                                        <td>40000 Xaf</td>
+                                        <td>60000 Xaf</td>
+                                        <td>01/01/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alex Wilder</td>
+                                        <td>40000 Xaf</td>
+                                        <td>60000 Xaf</td>
+                                        <td>01/01/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#investirModal">Investir</a>
                 </div>
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal"><span
-                                class="fas fa-file-circle-question"></span></a>
+                <div class="recently">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Actualité</h2>
+                        </div>
+                        <div class="box-body">
+                            <div class="customer">
+                                <div>
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <h4>Alex Wilder</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="m-0">a été fusionner à</h4>
+                                </div>
+                                <div>
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <h4>Alex Wilder</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customer">
+                                <div>
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <h4>Alex Wilder</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="m-0">a envoyer une confirmation de transfert</h4>
+                                </div>
+                                <div>
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <h4>Alex Wilder</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
                 </div>
-                <div class="action-card">
-                    <div class="item-action">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal"><span
-                                class="fas fa-retweet"></span></a>
-                    </div>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#bonusModal">Bonus</a>
-                </div>
-            </div>
-
-            <div class="inventory">
-                <h4>Investissement en cours</h4>
-                <table id="investissement">
-                    <thead>
-                        <tr>
-                            <td>Investissement</td>
-                            <td>Gain</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="list-inv">
-                            <td>
-                                <span>XAF</span> <span>60.000</span>
-                            </td>
-                            <td>
-                                <span>XAF</span> <span>60.000</span>
-                            </td>
-                            <td>
-                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    <span class="fas fa-chevron-down"></span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="collapse delay-wait" id="collapseExample">
-                            <td colspan="3"><span id="days"></span>J - <span id="hours"></span>H - <span
-                                    id="minutes"></span>M - <span id="seconde"></span>S</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
-
-        <div class="menu">
-            <div class="menu-items">
-                <li class="active"><a href="mon-compte.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href="mes-transactions.html"><i class="fa-solid fa-repeat"></i><span>Transactions</span></a></li>
-                <li><a href="mes-investissement.html"><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
-                <li><a href="mon-profil.html"><i class="fas fa-user-gear"></i><span>Profil</span></a></li>
-            </div>
-        </div>
 
         <!-- Modal investissement -->
         <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
@@ -226,17 +246,18 @@
         <!-- /Modal details -->
         <!-- Modal bonus -->
         <div class="modal fade" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bonusModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
-                        <div class="bonus">
-                            <h5>Souhaitez-vous réclamer votre bonus ?</h5>
-                            <div>
-                                <button>Oui</button>
-                                <button type="button" data-bs-dismiss="modal"
-                                aria-label="Close">Non</button>
-                            </div>
-                        </div>
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
@@ -248,21 +269,6 @@
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendors/font-awesome/js/all.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        var dest = new Date("Dec 25, 2022 00:00:00").getTime();
-        var x = setInterval(function () {
-            var now = new Date().getTime();
-            var diff = dest - now;
-            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            var second = Math.floor((diff % (1000 * 60)) / 1000);
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconde").innerHTML = second;
-        }, 1000)
-    </script>
 </body>
 
 </html>

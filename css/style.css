@@ -17,6 +17,7 @@
     --black-lice: #363232;
     --text-link: rgb(16, 108, 245);
     --border-color-img: rgba(16, 108, 245, 0.521);
+    --bg-color-blue: rgba(127, 177, 252, 0.637);
     --li-hover-menu: rgb(46, 46, 46);
     --card-text-color: rgb(117, 117, 117);
     --text-f-span-dash: rgb(0, 0, 0);
@@ -446,6 +447,51 @@ body {
     padding: 2px;
 }
 
+.user-online i,
+.user-online svg{
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+.menu-drop{
+    position: absolute;
+    background: #fff;
+    padding: 1rem;
+    min-width: 200px;
+    right: -400px;
+    top: 80px;
+    transition: 1s ease;
+}
+
+.menu-drop.show{
+    right: 0;
+    transition: 1.4s ease;
+}
+
+
+.menu-drop li{
+    list-style: none;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px 0;
+}
+
+.menu-drop li:last-child{
+    border-bottom: none;
+}
+
+.menu-drop li a{
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 0;
+    transition: .4s ease;
+}
+
+.menu-drop li a:hover{
+    color: var(--text-link);
+}
+
 .menu {
     position: fixed;
     bottom: 0;
@@ -502,17 +548,17 @@ body {
 
 .main-dash .dashboard {
     margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 15px 30px;
     overflow-y: auto;
-    overflow-x: hidden;
-    height: 82vh;
+    /* overflow-x: hidden;
+    height: 82vh; */
     width: 100%;
     scrollbar-width: none;
 }
 
 .main-dash .dashboard > div:last-child{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .main-dash .dashboard .i-name h5 {
@@ -692,6 +738,29 @@ body {
     text-decoration: none;
 }
 
+.bonus{
+    text-align: center;
+}
+
+.bonus div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bonus button{
+    border: none;
+    background-color: #55ff55a1;
+    color: var(--green-text-btn);
+    padding: 10px 20px;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.bonus button:last-child{
+    background-color: #fc0606a1;
+    color: #fff;
+}
+
 .investir-m{
     padding: 5px 15px;
 }
@@ -819,7 +888,7 @@ body {
 }
 
 .trans-blue{
-    background: var(--border-color-img);
+    background: var(--bg-color-blue);
 }
 
 .transact{
@@ -886,6 +955,16 @@ body {
     color: var(--text-l-span-dash);
 }
 
+
+.transact .people > div:first-child h5,
+.transact .people > div:first-child p{
+    color: var(--text-link);
+}
+
+.transact .people > div:last-child h5,
+.transact .people > div:last-child p{
+    color: var(--text-l-span-dash);
+}
 
 /* Mon profil */
 
@@ -1109,3 +1188,16 @@ body {
 .form-edit .user_pic input {
     display: none;
 }
+
+/* Message d'erreur */
+.error-com-a{
+    padding: 10px 20px;
+    background-color: #ff5555;
+    border-radius: 10px;
+}
+
+.error-com-a li{
+    list-style: none;
+    color: #fff;
+}
+
