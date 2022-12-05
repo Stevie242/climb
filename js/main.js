@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(this).css('background-image', 'url(' + bg + ')');
     });
     
-    $('#drop-menu').on('click',function(){
+    $('#drop-menu').click(function(){
         $('#menu-drop').toggleClass('show');
     });
 })
