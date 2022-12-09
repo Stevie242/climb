@@ -416,6 +416,10 @@ body {
     background-color: #fff;
 }
 
+.header .logo img{
+    width: 100px;
+    height: 60px;
+}
 
 .header .user-online {
     display: flex;
