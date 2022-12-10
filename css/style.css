@@ -464,13 +464,14 @@ body {
     background: #fff;
     padding: 1rem;
     min-width: 200px;
-    right: -400px;
+    right: 0px;
+    transform: translatex(400%);
     top: 80px;
     transition: 1s ease;
 }
 
 .menu-drop.show{
-    right: 0;
+    transform: translateX(0%);
     transition: 1.4s ease;
 }
 
