@@ -1,26 +1,29 @@
-
-
-table{
+table {
     border-collapse: collapse;
 }
 
-.box{
+.box {
     background-color: #fff;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 
-.box-header,.box-body{
+.box-header,
+.box-body {
     padding: 1rem;
 }
 
-.box-header{
+.box-body {
+    scrollbar-width: none;
+}
+
+.box-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.box-header button{
+.box-header button {
     border: none;
     background-color: #55ff55a1;
     color: var(--green-text-btn);
@@ -37,71 +40,72 @@ thead td {
     font-weight: 700;
 }
 
-td{
+td {
     padding: .5rem;
     font-size: .9rem;
     color: #222;
-    
+
 }
 
-tbody tr{
+tbody tr {
     border-bottom: 2px solid #f0f0f0;
 }
 
-tbody tr:last-child{
+tbody tr:last-child {
     border-bottom: none;
 }
 
-.customer{
+.customer {
     border-bottom: 2px solid #f0f0f0;
     padding: .5rem 1rem;
 }
 
-.customer p{
+.customer p {
     margin-bottom: 0;
 }
-.user-item{
+
+.user-item {
     display: flex;
     align-items: center;
 }
 
-.user-item img{
+.user-item img {
     width: 60px;
     height: 60px;
 }
 
-.user-item div{
+.user-item div {
     margin-left: 10px;
 }
 
-.user-item div h5{
+.user-item div h5 {
     font-size: 16px;
     margin-bottom: 0;
     text-align: start;
 }
 
-.user-item div h6{
+.user-item div h6 {
     font-size: 12px;
     color: #949393;
     margin-bottom: 0;
     text-align: start;
 }
 
-.action{
+.action {
     position: relative;
 }
 
-.action a{
+.action a {
     color: #000;
 }
 
 .action i,
-.action svg{
+.action svg {
     cursor: pointer;
 }
 
-.action-list{
-    position:absolute;
+.action-list {
+    position: absolute;
     background-color: rgb(252, 250, 250);
     padding: 1rem;
     border: 1px solid rgb(233, 225, 225);
@@ -111,13 +115,13 @@ tbody tr:last-child{
     display: flex;
 } */
 
-.action-list li{
+.action-list li {
     list-style: none;
-    padding:.4rem 0;
+    padding: .4rem 0;
     display: inline-block;
 }
 
-.zom-a{
+.zom-a {
     border: none;
     background: transparent;
     display: flex;
@@ -125,7 +129,7 @@ tbody tr:last-child{
     font-size: 14px;
 }
 
-.action-list li button{
+.action-list li button {
     border: none;
     background: transparent;
     display: flex;
@@ -138,7 +142,23 @@ tbody tr:last-child{
 } */
 
 .action-list li button i,
-.action-list li button svg{
+.action-list li button svg {
     margin-right: 5px;
 }
 
+/* Voir profil */
+/* .profil-user {} */
+
+.profil-user .info {
+    text-align: center;
+    font-size: 10px;
+    /* color: ; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.profil-user .image{
+    border-radius: 50%;
+    border: 2px solid var(--border-color-img);
+    height: 150px;
+    width: 150px;
+}

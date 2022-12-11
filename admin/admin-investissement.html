@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendors/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/supervisor.css"> -->
+    <link rel="stylesheet" href="../css/supervisor.css">
     <title>Accueil | Climb</title>
 </head>
 
 <body>
-    <main class="main-dash">
+      <main class="main-dash">
         <div class="header">
             <div class="logo">
                 <img src="../climb.png" alt="logo">
@@ -35,50 +35,81 @@
 
         <section class="dashboard">
             <div class="i-name">
-                <h5>Panel d'administration</h5>
+                <h5>Gestion des Plans d'investissements</h5>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-users"></i>
-                        <span class="txt">Utilisateurs</span>
-                        <h4><span>100</span></h4>
+            <div class="actuality">
+                <div class="investissement">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Plan d'investissement</h2>
+                            <button data-bs-toggle="modal" data-bs-target="#addPlan">Ajouter</button>
+                        </div>
+                        <div class="box-body">
+                            <table width='100%'>
+                                <thead>
+                                    <tr>
+                                        <td>Montant</td>
+                                        <td>Gain</td>
+                                        <td>Statut</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10 000XAF</td>
+                                        <td>15 000XAF</td>
+                                        <td>Actif</td>
+                                        <td class="action dropdown">
+                                            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical show-action-list"></i>
+                                            </a>
+                                            <ul class="dropdown-menu action-list">
+                                                <li class="dropdown-item">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editPlan">Modifier</button>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <button data-bs-toggle="modal" data-bs-target="#actifModal"><i></i>Activer</button>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <button data-bs-toggle="modal" data-bs-target="#inactifModal"><i></i>Désactiver</button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-wallet"></i>
-                        <span class="txt">Total investissement</span>
-                        <h4><span>120</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-wallet"></i>
-                        <span class="txt">Investissement en cours</span>
-                        <h4><span>10</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-money-bill"></i>
-                        <span class="txt">Fonds investis sur climb</span>
-                        <h4><span>XAF</span> <span>120.000</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-right-left"></i>
-                        <span class="txt">Transactions non validé</span>
-                        <h4><span>0</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-triangle-exclamation text-danger"></i>
-                        <span class="txt">Signalement</span>
-                        <h4><span>0</span></h4>
+
+                <div class="investissement">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Liste des investissements</h2>
+                        </div>
+                        <div class="box-body overflow-auto">
+                            <table width='100%'>
+                                <thead>
+                                    <tr>
+                                        <td>Nom et Prénom</td>
+                                        <td>Montant</td>
+                                        <td>Gain</td>
+                                        <td>Date</td>
+                                        <td>Statut</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Vagner WASSA</td>
+                                        <td>10 000XAF</td>
+                                        <td>15 000XAF</td>
+                                        <td>01/01/2022</td>
+                                        <td>En attente</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,130 +117,112 @@
 
         <div class="menu">
             <div class="menu-items">
-                <li class="active"><a href="mon-compte.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a></li>
-                <li><a href="mes-transactions.html"><i class="fa-solid fa-users"></i><span>Utilisateurs</span></a></li>
-                <li><a href="mes-investissement.html"><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
-                <li><a href="mon-profil.html"><i class="fas fa-right-left"></i><span>Fusion</span></a></li>
+                <li><a href="admin-dashboard.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a>
+                </li>
+                <li><a href="admin-list-users.html"><i class="fa-solid fa-users"></i><span>Utilisateurs</span></a></li>
+                <li  class="active"><a href="admin-investissement.html"><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
+                <li><a href="admin-fusion.html"><i class="fas fa-right-left"></i><span>Fusion</span></a></li>
             </div>
         </div>
 
-        <!-- Modal investissement -->
-        <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investir</h5>
-                            <!-- /Title -->
-                            <div class="form-inv">
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="plan_invest">Sélectionner le montant à invesitr</label>
-                                        <select name="plan_invest" id="plan_invest">
-                                            <option value="0" disabled>Sélectionner le montant à invesitr</option>
-                                            <option value="2">10000</option>
-                                            <option value="3">20000</option>
-                                            <option value="4">30000</option>
-                                            <option value="5">40000</option>
-                                            <option value="6">50000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="gain">Votre gain</label>
-                                        <input type="text" placeholder="0" id="gain" disabled>
-                                    </div>
-                                    <div class="form-submit">
-                                        <button>Investir</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Modal investissement -->
-        <!-- Modal details -->
-        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+
+        <!-- Ajouter plan -->
+        <div class="modal fade" id="addPlan" tabindex="-1" aria-labelledby="addPlanLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addPlanLabel">Ajouter un plan d'investissement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investissement en cours <span>(2)</span></h5>
-                            <!-- /Title -->
-                            <div class="cards-inv">
-                                <!-- Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
+                        <div class="form-edit">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="planamount">Montant</label>
+                                    <input type="number" min="0" name="planamount" id="planamount" placeholder="Ex: 5 000XAF">
                                 </div>
-                                <!-- /Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="gain">Gain</label>
+                                    <input type="number" min="0" disabled id="gain">
                                 </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
+                                <div class="form-submit d-flex justify-content-center">
+                                    <button type="submit">Ajouter</button>
                                 </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Modal details -->
-        <!-- Modal bonus -->
-        <div class="modal fade" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+        <!-- /Ajouter plan -->
+
+        <!-- Modifier plan -->
+        <div class="modal fade" id="editPlan" tabindex="-1" aria-labelledby="editPlanLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editPlanLabel">Ajouter un plan d'investissement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-edit">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="planamount">Montant</label>
+                                    <input type="number" min="0" name="planamount" id="planamount" placeholder="Ex: 5 000XAF">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gain">Gain</label>
+                                    <input type="number" min="0" disabled id="gain">
+                                </div>
+                                <div class="form-submit d-flex justify-content-center">
+                                    <button type="submit">Ajouter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modifier plan -->
+
+
+        <!-- Modal Actif -->
+        <div class="modal fade" id="actifModal" tabindex="-1" aria-labelledby="actifModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="bonus">
-                            <h5>Souhaitez-vous réclamer votre bonus ?</h5>
+                            <h5>Souhaitez-vous rendre actif ?</h5>
                             <div>
                                 <button>Oui</button>
-                                <button type="button" data-bs-dismiss="modal"
-                                aria-label="Close">Non</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Modal bonus -->
+        <!-- /Modal Actif -->
+
+        <!-- Modal Inactif -->
+        <div class="modal fade" id="inactifModal" tabindex="-1" aria-labelledby="inactifModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="bonus">
+                            <h5>Souhaitez-vous rendre inactif ?</h5>
+                            <div>
+                                <button>Oui</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal Inactif -->
+
     </main>
 
     <script src="../vendors/jquery/jquery-3.6.1.min.js"></script>

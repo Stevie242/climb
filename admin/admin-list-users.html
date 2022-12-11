@@ -68,7 +68,7 @@
                                         <td>Admin</td>
                                         <td>01/01/2023</td>
                                         <td class="action">
-                                            <button class="zom-a">
+                                            <button class="zom-a" data-bs-toggle="modal" data-bs-target="#showUser">
                                                 <i class="fa fa-eye"></i>
                                             </button>
                                         </td>
@@ -168,6 +168,38 @@
         <!-- /Ajouter utilisateur -->
 
         <!-- Voir profil -->
+        <div class="modal fade" id="showUser" tabindex="-1" aria-labelledby="showUserLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="showUserLabel">Profil utilisateur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="profil-user">
+                            <div class="d-flex justify-content-center">
+                                <img src="../img/img-1.jpg" class="image">
+                            </div>
+                            <div class="info">
+                                <h5>
+                                    <strong>Nom: </strong> vagner WASSA</h5>
+                                <h5>
+                                    <strong>Role: </strong> Admin</h5>
+                                <h5>
+                                    <strong>Inscrit le: </strong> 01/01/2022</h5>
+                                <h5>
+                                    <strong>Email: </strong> Vagner@mail.com</h5>
+                                <h5>
+                                    <strong>Téléphone:</strong> +242 06 600 00 00 </h5>
+                                <h5>
+                                    <strong>Total investis: </strong> 10 000xAF</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /Voir profil -->
 
         <!-- Modal investissement -->
