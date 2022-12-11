@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendors/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/supervisor.css"> -->
+    <link rel="stylesheet" href="../css/supervisor.css">
     <title>Accueil | Climb</title>
 </head>
 
@@ -35,50 +35,66 @@
 
         <section class="dashboard">
             <div class="i-name">
-                <h5>Panel d'administration</h5>
+                <h5>Gestion des Utilisateurs</h5>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-users"></i>
-                        <span class="txt">Utilisateurs</span>
-                        <h4><span>100</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-wallet"></i>
-                        <span class="txt">Total investissement</span>
-                        <h4><span>120</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-wallet"></i>
-                        <span class="txt">Investissement en cours</span>
-                        <h4><span>10</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-money-bill"></i>
-                        <span class="txt">Fonds investis sur climb</span>
-                        <h4><span>XAF</span> <span>120.000</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-right-left"></i>
-                        <span class="txt">Transactions non validé</span>
-                        <h4><span>0</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="carte">
-                        <i class="fas fa-triangle-exclamation text-danger"></i>
-                        <span class="txt">Signalement</span>
-                        <h4><span>0</span></h4>
+            <div class="actuality">
+                <div class="investissement">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>Utilisateurs</h2>
+                            <button data-bs-toggle="modal" data-bs-target="#addUser">Ajouter</button>
+                        </div>
+                        <div class="box-body">
+                            <table width='100%'>
+                                <thead>
+                                    <tr>
+                                        <td>Nom</td>
+                                        <td>Type</td>
+                                        <td>Date</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="user-item">
+                                            <img src="../img/user.png" alt="profil">
+                                            <div>
+                                                <h5>Alex Wilder</h5>
+                                                <h6>066056060</h6>
+                                            </div>
+                                        </td>
+                                        <td>Admin</td>
+                                        <td>01/01/2023</td>
+                                        <td class="action">
+                                            <button class="zom-a">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                        </td>
+                                        <td class="action dropdown">
+                                            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical show-action-list"></i>
+                                            </a>
+                                            <ul class="dropdown-menu action-list">
+                                                <li class="dropdown-item">
+                                                    <button>Bloquer</button>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <button>Débloquer</button>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <button><i></i>Activer</button>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <button><i></i>Désactiver</button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,13 +102,73 @@
 
         <div class="menu">
             <div class="menu-items">
-                <li class="active"><a href="admin-dashboard.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a>
+                <li><a href="admin-dashboard.html"><i class="fas fa-dashboard"></i><span>Dashboard</span></a>
                 </li>
-                <li><a href="admin-list-users.html"><i class="fa-solid fa-users"></i><span>Utilisateurs</span></a></li>
+                <li  class="active"><a href="admin-list-users.html"><i class="fa-solid fa-users"></i><span>Utilisateurs</span></a></li>
                 <li><a href="admin-investissement.html"><i class="fas fa-wallet"></i><span>Investissement</span></a></li>
                 <li><a href="admin-fusion.html"><i class="fas fa-right-left"></i><span>Fusion</span></a></li>
             </div>
         </div>
+
+
+        <!-- Ajouter utilisateur -->
+        <div class="modal fade" id="addUser" tabindex="-1" aria-labelledby="addUserLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addUserLabel">Ajouter un utilisateur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-edit">
+                            <form action="">
+                                <div class="user_pic">
+                                    <img src="img/profil-default.png" alt="" id="image_profile">
+                                    <label for="add_pic" id="btn-add-pic"><i class="fas fa-camera-alt"></i></label>
+                                    <input type="file" name="picture" id="add_pic">
+                                </div>
+                                <div class="form-group">
+                                    <label for="full_name">Nom et prénom</label>
+                                    <input type="text" name="full_name" id="full_name" placeholder="Ex: Alex Wilder">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Ex: alex@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Ex: 066065050">
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Role</label>
+                                    <select name="role" id="role">
+                                        <option value="" disabled>Selectionner un role</option>
+                                        <option value="">Admin</option>
+                                        <option value="">Superviseur</option>
+                                        <option value="">Client</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Mot de passe</label>
+                                    <input type="password" name="pwd" id="pwd" placeholder="Tapez votre mot de passe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="conf_pwd">Confirmer votre mot de passe</label>
+                                    <input type="password" name="conf_pwd" id="conf_pwd" placeholder="Retapez votre mot de passe">
+                                </div>
+                                <div class="form-submit d-flex justify-content-center">
+                                    <button type="submit">Ajouter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Ajouter utilisateur -->
+
+        <!-- Voir profil -->
+        <!-- /Voir profil -->
 
         <!-- Modal investissement -->
         <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
@@ -202,8 +278,7 @@
                             <h5>Souhaitez-vous réclamer votre bonus ?</h5>
                             <div>
                                 <button>Oui</button>
-                                <button type="button" data-bs-dismiss="modal"
-                                aria-label="Close">Non</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
                             </div>
                         </div>
                     </div>

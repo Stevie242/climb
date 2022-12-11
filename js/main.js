@@ -8,6 +8,10 @@ $(document).ready(function(){
     $('#drop-menu').click(function(){
         $('#menu-drop').toggleClass('show');
     });
+
+    /*$('.show-action-list').click(function(){
+        $('.action-list').toggleClass('show');
+    });*/
 })
 
 /*Show picture upload */

@@ -465,14 +465,14 @@ body {
     padding: 1rem;
     min-width: 200px;
     right: 0px;
-    transform: translatex(400%);
+    transform: translatex(200%);
     top: 80px;
-    transition: 1s ease;
+    transition: .7s ease;
 }
 
 .menu-drop.show{
     transform: translateX(0%);
-    transition: 1.4s ease;
+    transition: .7s ease;
 }
 
 
@@ -555,7 +555,7 @@ body {
     margin-top: 80px;
     margin-bottom: 30px;
     padding: 15px 30px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     /* overflow-x: hidden;
     height: 82vh; */
     width: 100%;
@@ -569,7 +569,9 @@ body {
 .main-dash .dashboard .i-name h5 {
     font-weight: 900;
     font-size: 26px;
+    margin-right: 10px;
 }
+
 
 .main-dash .dashboard .carte {
     padding: 10px 15px;
@@ -582,6 +584,13 @@ body {
     margin-bottom: 20px;
 }
 
+.main-dash .dashboard .carte i,
+.main-dash .dashboard .carte svg{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.main-dash .dashboard .carte span.txt,
 .main-dash .dashboard .carte>span:first-child {
     font-size: 16px;
     color: var(--card-text-color);
@@ -1103,6 +1112,7 @@ body {
     font-size: 17px;
 }
 
+.form-edit .form-group select,
 .form-edit .form-group input {
     border: 2px solid var(--border-color-img);
     border-radius: 10px;
@@ -1110,6 +1120,7 @@ body {
     font-size: 17px;
     padding: 10px 15px;
     outline: none;
+    background: transparent;
 }
 
 .form-edit .forgot-pwd {
