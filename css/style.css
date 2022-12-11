@@ -1120,7 +1120,7 @@ body {
     font-size: 17px;
     padding: 10px 15px;
     outline: none;
-    background: transparent;
+    background: tr;
 }
 
 .form-edit .forgot-pwd {

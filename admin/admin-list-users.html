@@ -78,16 +78,16 @@
                                             </a>
                                             <ul class="dropdown-menu action-list">
                                                 <li class="dropdown-item">
-                                                    <button>Bloquer</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#lockModal">Bloquer</button>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <button>Débloquer</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#unlockModal">Débloquer</button>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <button><i></i>Activer</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#actifModal">Activer</button>
                                                 </li>
                                                 <li class="dropdown-item">
-                                                    <button><i></i>Désactiver</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#inactifModal">Désactiver</button>
                                                 </li>
                                             </ul>
                                         </td>
@@ -202,112 +202,13 @@
         </div>
         <!-- /Voir profil -->
 
-        <!-- Modal investissement -->
-        <div class="modal fade" id="investirModal" tabindex="-1" aria-labelledby="investirModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investir</h5>
-                            <!-- /Title -->
-                            <div class="form-inv">
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="plan_invest">Sélectionner le montant à invesitr</label>
-                                        <select name="plan_invest" id="plan_invest">
-                                            <option value="0" disabled>Sélectionner le montant à invesitr</option>
-                                            <option value="2">10000</option>
-                                            <option value="3">20000</option>
-                                            <option value="4">30000</option>
-                                            <option value="5">40000</option>
-                                            <option value="6">50000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="gain">Votre gain</label>
-                                        <input type="text" placeholder="0" id="gain" disabled>
-                                    </div>
-                                    <div class="form-submit">
-                                        <button>Investir</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Modal investissement -->
-        <!-- Modal details -->
-        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="investir-m">
-                            <button type="button" class="btn-close-modal" data-bs-dismiss="modal"
-                                aria-label="Close"><span class="fas fa-chevron-left"></span>
-                                <span>Retour</span></button>
-                            <!-- Title -->
-                            <h5>Investissement en cours <span>(2)</span></h5>
-                            <!-- /Title -->
-                            <div class="cards-inv">
-                                <!-- Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <!-- /Une carte -->
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                                <div class="card-inv">
-                                    <h6>Investissement : XAF <span>40.000</span></h6>
-                                    <h6>Gain : XAF <span>60.000</span></h6>
-                                    <p>En attente d'une fusion</p>
-                                    <p>Initier le : <span>20/11/2022</span></p>
-                                    <div class="trash">
-                                        <a href=""><span class="fa-solid fa-trash"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Modal details -->
-        <!-- Modal bonus -->
-        <div class="modal fade" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+        <!-- Modal Actif -->
+        <div class="modal fade" id="actifModal" tabindex="-1" aria-labelledby="actifModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="bonus">
-                            <h5>Souhaitez-vous réclamer votre bonus ?</h5>
+                            <h5>Souhaitez-vous rendre actif ?</h5>
                             <div>
                                 <button>Oui</button>
                                 <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
@@ -317,7 +218,62 @@
                 </div>
             </div>
         </div>
-        <!-- /Modal bonus -->
+        <!-- /Modal Actif -->
+
+        <!-- Modal Inactif -->
+        <div class="modal fade" id="inactifModal" tabindex="-1" aria-labelledby="inactifModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="bonus">
+                            <h5>Souhaitez-vous rendre inactif ?</h5>
+                            <div>
+                                <button>Oui</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal Inactif -->
+
+        <!-- Modal bloquer -->
+        <div class="modal fade" id="lockModal" tabindex="-1" aria-labelledby="lockModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="bonus">
+                            <h5>Souhaitez-vous bloquer cette utilisateur ?</h5>
+                            <div>
+                                <button>Oui</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal bloquer -->
+
+        <!-- Modal débloquer -->
+        <div class="modal fade" id="unlockfModal" tabindex="-1" aria-labelledby="unlockModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="bonus">
+                            <h5>Souhaitez-vous débloquer cette utilisateur ?</h5>
+                            <div>
+                                <button>Oui</button>
+                                <button type="button" data-bs-dismiss="modal" aria-label="Close">Non</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal débloquer -->
+        
     </main>
 
     <script src="../vendors/jquery/jquery-3.6.1.min.js"></script>
